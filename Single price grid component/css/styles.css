@@ -1,0 +1,155 @@
+body {
+  background-color: #E6EFF5;
+  font-family: 'Karla', arial;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #D2EBEC;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #41AAA8;
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  color: #FCFFFF;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #FCFFFF;
+}
+
+p {
+  font-size: 1rem;
+  color: #FCFFFF;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #D2EBEC;
+  position: relative;
+  bottom: 6px;
+}
+
+.p-smaller {
+  font-size: .9rem;
+  color: #D2EBEC;
+}
+
+.guarantee {
+  color: #C0DE44;
+}
+
+.gain-access {
+  color: #A3A5A9;
+}
+
+#content {
+  background-color: white;
+  border-radius: 8px;
+  width: 640px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(4);
+  box-shadow: 0 0 15px 2px #CFE0EB;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+.top-container {
+  grid-area: top;
+  padding: 40px;
+}
+
+.bottom-left-container {
+  grid-area: left;
+  background-color: #34B3B0;
+  border-radius: 0 0 0 8px;
+  width: 240px;
+  padding: 40px;
+}
+
+.bottom-right-container {
+  grid-area: right;
+  background-color: #4FBDBC;
+  border-radius: 0 0 8px 0;
+  width: 240px;
+  padding: 40px;
+}
+
+.sign-up-button {
+  width: 92%;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: #C0DE44;
+  background-image: linear-gradient(to bottom, #CBEA48, #C0DD44);
+  box-shadow: 0 0 5px 3px #37A5A2;
+  text-shadow: 1px 1px 60px #A6BF3B;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 17px;
+  padding: 13px;
+}
+
+.sign-up-button:hover {
+  background-image: linear-gradient(to bottom, #D1F441, #B4D238);
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 7px;
+  background-color: #34B3B0;
+  position: fixed;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+  }
+
+  #content {
+    width: 370px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: repeat(4);
+    grid-template-areas:
+      "top"
+      "left"
+      "right";
+  }
+
+  .top-container {
+    padding: 30px;
+  }
+
+  .bottom-left-container {
+    width: 310px;
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  .bottom-right-container {
+    border-radius: 0 0 8px 8px;
+    width: 310px;
+    padding: 30px;
+  }
+}
